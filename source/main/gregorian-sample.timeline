@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<timeline>
+  <version>2.5.0 (67ed963f67ff 2021-10-05)</version>
+  <timetype>gregoriantime</timetype>
+  <eras>
+    <era>
+      <name>Sample Era3</name>
+      <start>2021-11-27 00:00:00</start>
+      <end>2021-12-17 00:00:00</end>
+      <color>238,219,240</color>
+    </era>
+    <era>
+      <name>Sample Era1</name>
+      <start>2021-10-27 00:00:00</start>
+      <end>2021-11-10 00:00:00</end>
+      <color>238,219,240</color>
+    </era>
+  </eras>
+  <categories>
+    <category>
+      <name>Välkommen</name>
+      <color>235,82,255</color>
+      <done_color>0,0,0</done_color>
+      <font_color>0,0,0</font_color>
+    </category>
+    <category>
+      <name>Intro</name>
+      <color>250,250,20</color>
+      <done_color>0,0,0</done_color>
+      <font_color>0,0,0</font_color>
+    </category>
+    <category>
+      <name>Funktioner</name>
+      <color>45,130,210</color>
+      <done_color>0,0,0</done_color>
+      <font_color>0,0,0</font_color>
+    </category>
+    <category>
+      <name>Sparar</name>
+      <color>40,154,40</color>
+      <done_color>0,0,0</done_color>
+      <font_color>0,0,0</font_color>
+    </category>
+  </categories>
+  <events>
+    <event>
+      <start>2021-10-13 13:23:09</start>
+      <end>2021-11-06 20:12:50</end>
+      <text>[1]Container</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <default_color>233,245,189</default_color>
+    </event>
+    <event>
+      <start>2021-10-07 18:12:15</start>
+      <end>2021-10-15 18:12:15</end>
+      <text>[2]Box-5</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <default_color>239,215,215</default_color>
+    </event>
+    <event>
+      <start>2021-10-17 19:43:35</start>
+      <end>2021-10-18 19:43:35</end>
+      <text>[3]Box-9</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-11-19 02:26:41</start>
+      <end>2021-12-17 01:03:57</end>
+      <text>[4]BlaBla</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <default_color>127,127,127</default_color>
+    </event>
+    <event>
+      <start>2021-11-06 19:08:43</start>
+      <end>2021-12-14 18:04:28</end>
+      <text>[5]FooBar</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <default_color>127,127,127</default_color>
+    </event>
+    <event>
+      <start>2021-10-13 13:23:09</start>
+      <end>2021-10-26 13:23:09</end>
+      <text>(1)BarFoo</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Välkommen</category>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-10-19 02:47:23</start>
+      <end>2021-10-25 02:47:23</end>
+      <text>(1)Ta bort händelse</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-10-28 06:17:28</start>
+      <end>2021-11-06 20:12:50</end>
+      <text>(1)Välj händelse</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Intro</category>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-10-07 18:12:15</start>
+      <end>2021-10-15 18:12:15</end>
+      <text>(2)Den här händelsen har en hyperlänk</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Intro</category>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-10-08 15:34:19</start>
+      <end>2021-10-14 15:34:19</end>
+      <text>(2)Redigera händelse</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <default_color>247,222,222</default_color>
+    </event>
+    <event>
+      <start>2021-10-17 19:43:35</start>
+      <end>2021-10-18 19:43:35</end>
+      <text>(3)Today</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <default_color>251,237,80</default_color>
+    </event>
+    <event>
+      <start>2021-11-27 20:03:56</start>
+      <end>2021-12-17 01:03:57</end>
+      <text>(4)Haha</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Välkommen</category>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-11-19 02:26:41</start>
+      <end>2021-11-25 02:26:41</end>
+      <text>(4)Skapa händelse</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-11-06 19:08:43</start>
+      <end>2021-12-14 18:04:28</end>
+      <text>(5)Baar</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Intro</category>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-11-06 19:08:43</start>
+      <end>2021-11-18 23:21:52</end>
+      <text>(5)Zooma</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-11-02 00:00:00</start>
+      <end>2021-11-02 00:00:00</end>
+      <text>&lt;</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <default_color>255,249,87</default_color>
+    </event>
+    <event>
+      <start>2021-11-29 20:41:25</start>
+      <end>2021-11-29 20:41:25</end>
+      <text>&gt;</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <default_color>216,245,112</default_color>
+    </event>
+    <event>
+      <start>2021-11-06 10:07:13</start>
+      <end>2021-11-06 10:07:13</end>
+      <text>Välkommen till Timeline</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Välkommen</category>
+      <description>HoHo</description>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-10-20 20:52:50</start>
+      <end>2021-10-20 20:52:50</end>
+      <text>Rör musen över mig!</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-11-18 09:38:41</start>
+      <end>2021-11-27 13:58:36</end>
+      <text>Scrolla</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Intro</category>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-10-20 02:51:25</start>
+      <end>2021-11-03 21:11:10</end>
+      <text>Ändra storlek och flytta mig!</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Intro</category>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-11-24 00:00:00</start>
+      <end>2021-11-24 00:00:00</end>
+      <text>Sparar</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Sparar</category>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-11-03 08:11:02</start>
+      <end>2021-12-02 08:11:02</end>
+      <text>FooBar</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-11-11 02:36:00</start>
+      <end>2021-12-05 17:40:44</end>
+      <text>BarFoo4</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Välkommen</category>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>2021-10-20 00:36:19</start>
+      <end>2021-11-02 00:36:19</end>
+      <text>BarFoo5</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <default_color>0,0,0</default_color>
+    </event>
+  </events>
+  <view>
+    <displayed_period>
+      <start>2021-09-22 03:53:00</start>
+      <end>2022-01-12 01:38:35</end>
+    </displayed_period>
+    <hidden_categories>
+    </hidden_categories>
+  </view>
+</timeline>

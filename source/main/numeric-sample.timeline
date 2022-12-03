@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<timeline>
+  <version>2.5.0 (67ed963f67ff 2021-10-05)</version>
+  <timetype>numtime</timetype>
+  <eras>
+    <era>
+      <name>Exempel-era</name>
+      <start>20</start>
+      <end>28</end>
+      <color>250,250,230</color>
+    </era>
+  </eras>
+  <categories>
+    <category>
+      <name>Välkommen</name>
+      <color>255,80,80</color>
+      <done_color>255,153,153</done_color>
+      <font_color>0,0,0</font_color>
+    </category>
+    <category>
+      <name>Intro</name>
+      <color>250,250,20</color>
+      <done_color>252,252,138</done_color>
+      <font_color>0,0,0</font_color>
+    </category>
+    <category>
+      <name>Funktioner</name>
+      <color>100,100,250</color>
+      <done_color>131,131,251</done_color>
+      <font_color>250,250,20</font_color>
+    </category>
+    <category>
+      <name>Sparar</name>
+      <color>50,200,50</color>
+      <done_color>48,195,48</done_color>
+      <font_color>0,0,0</font_color>
+    </category>
+  </categories>
+  <events>
+    <event>
+      <start>5</start>
+      <end>24</end>
+      <text>[6]Container</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Intro</category>
+      <default_color>0,0,0</default_color>
+    </event>
+    <event>
+      <start>12</start>
+      <end>18</end>
+      <text>(6)Dra mig</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <description>Container Subevent 2
+
+Click on the event to get the drag handle and drag it.
+
+To drag the whole container, click on it and find the drag point at the center of the container by moving the mouse and drag it.</description>
+      <default_color>200,200,200</default_color>
+    </event>
+    <event>
+      <start>19</start>
+      <end>24</end>
+      <text>(6)Se video  med Container demo</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <description>Container Subevent 3
+
+Select hyperlink to show demo video.
+
+Right-click in the event and select 'Goto URL' in the popup menu and select the first (and only) link</description>
+      <hyperlink>http://www.youtube.com/watch?v=dBwEQ3vqB_I</hyperlink>
+      <default_color>200,200,200</default_color>
+    </event>
+    <event>
+      <start>5</start>
+      <end>10</end>
+      <text>(6)Ändra min storlek</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <description>Händels i container
+Klicka på händelsen för att få handtag för storleksändring</description>
+      <default_color>200,200,200</default_color>
+    </event>
+    <event>
+      <start>1</start>
+      <end>1</end>
+      <text>&lt;</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <description>Början</description>
+      <default_color>255,255,128</default_color>
+      <milestone>True</milestone>
+    </event>
+    <event>
+      <start>29</start>
+      <end>29</end>
+      <text>&gt;</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <description>Slut</description>
+      <default_color>255,255,128</default_color>
+      <milestone>True</milestone>
+    </event>
+    <event>
+      <start>4</start>
+      <end>4</end>
+      <text>Välkommen till Timeline</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Välkommen</category>
+      <default_color>200,200,200</default_color>
+    </event>
+    <event>
+      <start>11</start>
+      <end>19</end>
+      <text>Den här händelsen har en hyperlänk</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Intro</category>
+      <description>Höger-klicka för att öppna menyn där hyperlänk kan väljas.</description>
+      <hyperlink>https://sourceforge.net/projects/thetimelineproj/;http://thetimelineproj.sourceforge.net/</hyperlink>
+      <default_color>200,200,200</default_color>
+    </event>
+    <event>
+      <start>5</start>
+      <end>5</end>
+      <text>Rör musen över mig!</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Intro</category>
+      <description>Om man rör musen över en händelse med triangel, så visas händelsens beskrivning</description>
+      <default_color>200,200,200</default_color>
+    </event>
+    <event>
+      <start>5</start>
+      <end>10</end>
+      <text>Scrolla</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <description>Klicka och håll nere vänster musknapp på tidslinjen där du önskar att navigera.
+
+Du kan även använda mushjulet.
+
+Du kan även klicka med mittenknappen för att centrera vid den önskade punkten.</description>
+      <default_color>200,200,200</default_color>
+    </event>
+    <event>
+      <start>6</start>
+      <end>11</end>
+      <text>Zooma</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <description>Håll nere Ctrl-knappen medans du rullar med mushjulet.
+
+Håll nere Shift-knappen medans du navigerar med musen.</description>
+      <default_color>200,200,200</default_color>
+    </event>
+    <event>
+      <start>12</start>
+      <end>18</end>
+      <text>Skapa händelse</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <description>Dubbelklicka vid önskad punkt på tidslinjen.
+
+Håll nere Ctrl-knappen då du navigerar och väljer en period med musen.</description>
+      <default_color>200,200,200</default_color>
+    </event>
+    <event>
+      <start>12</start>
+      <end>18</end>
+      <text>Redigera händelse</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <description>Dubbelklicka på en händelse.</description>
+      <default_color>200,200,200</default_color>
+    </event>
+    <event>
+      <start>20</start>
+      <end>25</end>
+      <text>Välj händelse</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <description>Klicka på den.
+
+Håll ner Ctrl-knappen då du klickar för att markera flera händelser.</description>
+      <default_color>200,200,200</default_color>
+    </event>
+    <event>
+      <start>19</start>
+      <end>24</end>
+      <text>Ta bort händelse</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <description>Välj händelser som skall tas bort och tryck Del-knappen.</description>
+      <default_color>200,200,200</default_color>
+    </event>
+    <event>
+      <start>11</start>
+      <end>19</end>
+      <text>Ändra storlek och flytta mig!</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Funktioner</category>
+      <description>Markera mig först och dra sedan i något handtag.</description>
+      <default_color>200,200,200</default_color>
+    </event>
+    <event>
+      <start>23</start>
+      <end>23</end>
+      <text>Sparar</text>
+      <fuzzy>False</fuzzy>
+      <fuzzy_start>False</fuzzy_start>
+      <fuzzy_end>False</fuzzy_end>
+      <locked>False</locked>
+      <ends_today>False</ends_today>
+      <category>Sparar</category>
+      <description>Denna Timeline är bara lagrad i internminnet och ändringar som görs kommer inte att permanentas.
+
+Välj Arkiv/Ny/Timelinefil för att skapa en Timeline som sparas på disk.</description>
+      <default_color>200,200,200</default_color>
+    </event>
+  </events>
+  <view>
+    <displayed_period>
+      <start>1</start>
+      <end>29</end>
+    </displayed_period>
+    <hidden_categories>
+    </hidden_categories>
+  </view>
+</timeline>

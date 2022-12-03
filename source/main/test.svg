@@ -1,0 +1,779 @@
+<svg version="1.1" viewBox="0 0 805 632" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+<rect x="473.1504350916691" y="0" width="81.46362320450646" height="632" fill="#eedbf0" stroke="#000" />
+<!-- Sample Era3 -->
+<text x="488.9222466939224" y="624.92" style="font: 12px Verdana">Sample Era3</text>
+<rect x="346.8818191246842" y="0" width="57.024536243154444" height="632" fill="#eedbf0" stroke="#000" />
+<!-- Sample Era1 -->
+<text x="350.91408724626143" y="624.92" style="font: 12px Verdana">Sample Era1</text>
+<path
+    stroke="#000"
+    fill="#000"
+    stroke-dasharray=""
+    d="M 0,316
+L 805,316" />
+<path
+    stroke="#000"
+    fill="#000"
+    stroke-dasharray=""
+    d="M 0,316
+L 805,316" />
+<path
+    stroke="#c0c0c0"
+    fill="#000"
+    stroke-dasharray="1 2 "
+    d="M -7.484941814918682,0
+L -7.484941814918682,632" />
+<!-- Aug -->
+<text x="52.941837076033124" y="311" style="font: 10px Verdana">Aug</text>
+<path
+    stroke="#c0c0c0"
+    fill="#000"
+    stroke-dasharray="1 2 "
+    d="M -7.484941814918682,0
+L -7.484941814918682,632
+M 118.78367415206625,0
+L 118.78367415206625,632" />
+<!-- Sep -->
+<text x="175.8179821355587" y="311" style="font: 10px Verdana">Sep</text>
+<path
+    stroke="#c0c0c0"
+    fill="#000"
+    stroke-dasharray="1 2 "
+    d="M -7.484941814918682,0
+L -7.484941814918682,632
+M 118.78367415206625,0
+L 118.78367415206625,632
+M 240.97910895882586,0
+L 240.97910895882586,632" />
+<!-- Oct -->
+<text x="298.61341694231834" y="311" style="font: 10px Verdana">Oct</text>
+<path
+    stroke="#c0c0c0"
+    fill="#000"
+    stroke-dasharray="1 2 "
+    d="M -7.484941814918682,0
+L -7.484941814918682,632
+M 118.78367415206625,0
+L 118.78367415206625,632
+M 240.97910895882586,0
+L 240.97910895882586,632
+M 367.2477249258108,0
+L 367.2477249258108,632" />
+<!-- Nov -->
+<text x="424.3320329093033" y="311" style="font: 10px Verdana">Nov</text>
+<path
+    stroke="#c0c0c0"
+    fill="#000"
+    stroke-dasharray="1 2 "
+    d="M -7.484941814918682,0
+L -7.484941814918682,632
+M 118.78367415206625,0
+L 118.78367415206625,632
+M 240.97910895882586,0
+L 240.97910895882586,632
+M 367.2477249258108,0
+L 367.2477249258108,632
+M 489.4431597325704,0
+L 489.4431597325704,632" />
+<!-- Dec -->
+<text x="546.4274677160629" y="311" style="font: 10px Verdana">Dec</text>
+<path
+    stroke="#c0c0c0"
+    fill="#000"
+    stroke-dasharray="1 2 "
+    d="M -7.484941814918682,0
+L -7.484941814918682,632
+M 118.78367415206625,0
+L 118.78367415206625,632
+M 240.97910895882586,0
+L 240.97910895882586,632
+M 367.2477249258108,0
+L 367.2477249258108,632
+M 489.4431597325704,0
+L 489.4431597325704,632
+M 615.7117756995553,0
+L 615.7117756995553,632" />
+<!-- Jan -->
+<text x="672.4960836830478" y="311" style="font: 10px Verdana">Jan</text>
+<path
+    stroke="#c0c0c0"
+    fill="#000"
+    stroke-dasharray="1 2 "
+    d="M -7.484941814918682,0
+L -7.484941814918682,632
+M 118.78367415206625,0
+L 118.78367415206625,632
+M 240.97910895882586,0
+L 240.97910895882586,632
+M 367.2477249258108,0
+L 367.2477249258108,632
+M 489.4431597325704,0
+L 489.4431597325704,632
+M 615.7117756995553,0
+L 615.7117756995553,632
+M 741.9803916665403,0
+L 741.9803916665403,632" />
+<!-- Feb -->
+<text x="767.6401958332701" y="311" style="font: 10px Verdana">Feb</text>
+<path
+    stroke="#c0c0c0"
+    fill="#000"
+    stroke-dasharray="1 2 "
+    d="M -7.484941814918682,0
+L -7.484941814918682,632
+M 118.78367415206625,0
+L 118.78367415206625,632
+M 240.97910895882586,0
+L 240.97910895882586,632
+M 367.2477249258108,0
+L 367.2477249258108,632
+M 489.4431597325704,0
+L 489.4431597325704,632
+M 615.7117756995553,0
+L 615.7117756995553,632
+M 741.9803916665403,0
+L 741.9803916665403,632" />
+<path
+    stroke="#000000"
+    fill="#000"
+    stroke-dasharray=""
+    d="M -870.9993477826866,0
+L -870.9993477826866,632" />
+<!-- 2021 -->
+<text x="298.33588784977763" y="10" style="font: 14px Verdana">2021</text>
+<path
+    stroke="#000000"
+    fill="#000"
+    stroke-dasharray=""
+    d="M -870.9993477826866,0
+L -870.9993477826866,632
+M 615.7117756995553,0
+L 615.7117756995553,632" />
+<!-- 2022 -->
+<text x="700.2758878497776" y="10" style="font: 14px Verdana">2022</text>
+<path
+    stroke="#000000"
+    fill="#000"
+    stroke-dasharray=""
+    d="M -870.9993477826866,0
+L -870.9993477826866,632
+M 615.7117756995553,0
+L 615.7117756995553,632" />
+<path
+    stroke="#ff0000"
+    fill="#000"
+    stroke-dasharray=""
+    d="M 550.5408771359503,0
+L 550.5408771359503,632" />
+<path
+    stroke="#ff0000"
+    fill="#000"
+    stroke-dasharray=""
+    d="M 550.5408771359503,0
+L 550.5408771359503,632" />
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#bac497;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="288" y="322" width="107" height="73.1015625" fill="url(#grad1)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad1)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- Container -->
+<text x="312.326171875" y="336.556640625" style="font: 12px Verdana">Container</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#bc42cc;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ff84ff;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="292" y="343.1015625" width="53" height="19" fill="url(#grad2)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad2)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- BarFoo -->
+<text x="297.6376953125" y="357.658203125" style="font: 12px Verdana">BarFoo</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#2468a8;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#48d0ff;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="315" y="372.1015625" width="24" height="19" fill="url(#grad3)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad3)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- Ta bort händelse -->
+<text x="315" y="386.658203125" style="font: 12px Verdana">Ta bort händelse</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#c8c810;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ffff20;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="352" y="343.1015625" width="39" height="19" fill="url(#grad4)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad4)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- Välj händelse -->
+<text x="352" y="357.658203125" style="font: 12px Verdana">Välj händelse</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#bfacac;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="265" y="405.1015625" width="40" height="73.1015625" fill="url(#grad5)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad5)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- Box-5 -->
+<text x="267.3603515625" y="419.658203125" style="font: 12px Verdana">Box-5</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#c8c810;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ffff20;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="269" y="426.203125" width="32" height="19" fill="url(#grad6)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad6)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- Den här händelsen har en hyperlänk -->
+<text x="269" y="440.759765625" style="font: 12px Verdana">Den här händelsen har en hyperlänk</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad7" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#2468a8;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#48d0ff;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="272" y="455.203125" width="25" height="19" fill="url(#grad7)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad7)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- Redigera händelse -->
+<text x="272" y="469.759765625" style="font: 12px Verdana">Redigera händelse</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad8" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#010101;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="305" y="405.1015625" width="13" height="44.1015625" fill="url(#grad8)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad8)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- Box-9 -->
+<text x="305" y="419.658203125" style="font: 12px Verdana">Box-9</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad9" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#2468a8;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#48d0ff;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="309" y="426.203125" width="5" height="19" fill="url(#grad9)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad9)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- Today -->
+<text x="309" y="440.759765625" style="font: 12px Verdana">Today</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad10" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#666666;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#cccccc;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="437" y="322" width="122" height="44.1015625" fill="url(#grad10)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad10)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- BlaBla -->
+<text x="479.2734375" y="336.556640625" style="font: 12px Verdana">BlaBla</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad11" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#bc42cc;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ff84ff;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="477" y="343.1015625" width="78" height="19" fill="url(#grad11)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad11)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- Haha -->
+<text x="500.4873046875" y="357.658203125" style="font: 12px Verdana">Haha</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad12" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#2468a8;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#48d0ff;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="441" y="343.1015625" width="24" height="19" fill="url(#grad12)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad12)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- Skapa händelse -->
+<text x="441" y="357.658203125" style="font: 12px Verdana">Skapa händelse</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad13" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#666666;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#cccccc;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="387" y="405.1015625" width="162" height="73.1015625" fill="url(#grad13)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad13)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- FooBar -->
+<text x="447.1376953125" y="419.658203125" style="font: 12px Verdana">FooBar</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad14" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#c8c810;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ffff20;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="391" y="426.203125" width="154" height="19" fill="url(#grad14)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad14)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- Baar -->
+<text x="454.119140625" y="440.759765625" style="font: 12px Verdana">Baar</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad15" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#2468a8;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#48d0ff;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="391" y="455.203125" width="49" height="19" fill="url(#grad15)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad15)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- Zooma -->
+<text x="394.8427734375" y="469.759765625" style="font: 12px Verdana">Zooma</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad16" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#ccc746;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ffff8c;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="361" y="287" width="20" height="19" fill="url(#grad16)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad16)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<line x1="362" y1="306" x2="362" y2="316" stroke="#f00" stroke-dasharray=""/>
+<!-- < -->
+<text x="366.08984375" y="301.556640625" style="font: 12px Verdana"><</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad17" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#adc45a;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ffffb4;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="475" y="287" width="20" height="19" fill="url(#grad17)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad17)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<line x1="476" y1="306" x2="476" y2="316" stroke="#f00" stroke-dasharray=""/>
+<!-- > -->
+<text x="480.08984375" y="301.556640625" style="font: 12px Verdana">></text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad18" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#bc42cc;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ff84ff;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="312" y="258" width="154" height="19" fill="url(#grad18)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad18)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<line x1="313" y1="277" x2="313" y2="316" stroke="#f00" stroke-dasharray=""/>
+<!-- Välkommen till Timeline -->
+<text x="316.53125" y="272.556640625" style="font: 12px Verdana">Välkommen till Timeline</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad19" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#2468a8;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#48d0ff;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="253" y="229" width="138" height="19" fill="url(#grad19)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad19)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<line x1="254" y1="248" x2="254" y2="316" stroke="#f00" stroke-dasharray=""/>
+<!-- Rör musen över mig! -->
+<text x="258.3115234375" y="243.556640625" style="font: 12px Verdana">Rör musen över mig!</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad20" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#c8c810;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ffff20;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="438" y="376.1015625" width="38" height="19" fill="url(#grad20)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad20)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- Scrolla -->
+<text x="438" y="390.658203125" style="font: 12px Verdana">Scrolla</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad21" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#c8c810;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ffff20;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="319" y="405.1015625" width="60" height="19" fill="url(#grad21)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad21)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- Ändra storlek och flytta mig! -->
+<text x="319" y="419.658203125" style="font: 12px Verdana">Ändra storlek och flytta mig!</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad22" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#207b20;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#40f640;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="436" y="229" width="50" height="19" fill="url(#grad22)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad22)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<line x1="437" y1="248" x2="437" y2="316" stroke="#f00" stroke-dasharray=""/>
+<!-- Sparar -->
+<text x="440.9375" y="243.556640625" style="font: 12px Verdana">Sparar</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad23" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#2468a8;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#48d0ff;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="377" y="488.203125" width="118" height="19" fill="url(#grad23)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad23)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- FooBar -->
+<text x="415.1376953125" y="502.759765625" style="font: 12px Verdana">FooBar</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad24" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#bc42cc;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ff84ff;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="408" y="405.1015625" width="101" height="19" fill="url(#grad24)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad24)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- BarFoo4 -->
+<text x="433.8232421875" y="419.658203125" style="font: 12px Verdana">BarFoo4</text>
+<path
+    stroke="#000000"
+    fill="#000000"
+    stroke-dasharray=""
+    d="" />
+
+            <linearGradient id="grad25" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#2468a8;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#48d0ff;stop-opacity:1" />
+            </linearGradient>
+            
+<rect x="318" y="434.1015625" width="53" height="19" fill="url(#grad25)" stroke="#000000" />
+<path
+    stroke="#000000"
+    fill="url(#grad25)"
+    stroke-dasharray=""
+    d="" />
+<path
+    stroke="#f00"
+    fill="#fff"
+    stroke-dasharray=""
+    d="" />
+<!-- BarFoo5 -->
+<text x="319.8232421875" y="448.658203125" style="font: 12px Verdana">BarFoo5</text>
+</svg>

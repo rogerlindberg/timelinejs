@@ -1,0 +1,747 @@
+<!--
+
+  Copyright (C) 2021  Roger Lindberg, Rickard Lindberg
+
+  This file is part of TimelineJs.
+
+  TimelineJs is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  TimelineJs is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with TimelineJs.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The TimelineJs Application</title>
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <link rel="stylesheet" href="css/timeline.css" />
+  <link rel="stylesheet" href="css/timeline-navbar.css" />
+  <link rel="stylesheet" href="css/timeline-forms.css" />
+  <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+
+  <!--
+  ================================================
+    New Navigation Bar
+  ================================================
+  -->
+
+  <ul class="navbar" id="navbar" onmouseover="enableMenue()">
+    <!--
+  ------------------------------------------------
+    File Menu
+  ------------------------------------------------
+  -->
+    <li><a id="file-menu" href="#">File</a>
+      <ul class="menus">
+        <li class='has-submenu'>
+          <a class="prett">New</a>
+          <ul class="submenu">
+            <li><a href="javascript:menuHandler('file-new-gregorian');">Gregorian Timeline</a></li>
+            <li><a href="javascript:menuHandler('file-new-numeric');">Numeric Timeline</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:menuHandler('file-open');">Open...</a></li>
+        <li><a class="divider" href="javascript:menuHandler('file-export-to-svg');">Export to SVG</a></li>
+      </ul>
+    </li>
+    <!--
+  ------------------------------------------------
+    Edit Menu
+  ------------------------------------------------
+  -->
+    <li><a href="#">Edit</a>
+      <ul class="menus">
+        <li><a href="javascript:menuHandler('edit-edit-events');">Edit Events...</a></li>
+        <li><a href="javascript:menuHandler('edit-edit-categories');">Edit Categories...</a></li>
+        <li><a href="javascript:menuHandler('edit-edit-eras');">Edit Eras...</a></li>
+        <li><a href="javascript:menuHandler('edit-edit-milestones');">Edit Milestones...</a></li>
+        <li><a class="divider" href="javascript:menuHandler('edit-settings');">Settings</a></li>
+      </ul>
+    </li>
+    <!--
+  ------------------------------------------------
+    Show Menu
+  ------------------------------------------------
+  -->
+    <li><a href="#">Show</a>
+      <ul class="menus">
+        <li><a href="javascript:menuHandler('show-zoom-in');">Zoom In &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ctrl+ -</a>
+        </li>
+        <li><a href="javascript:menuHandler('show-zoom-out');">Zoom Out &nbsp;&nbsp;&nbsp;&nbsp;Ctrl+ +</a></li>
+      </ul>
+    </li>
+    <!--
+  ------------------------------------------------
+    Timeline Menu
+  ------------------------------------------------
+  -->
+    <li><a href="#">Timeline</a>
+      <ul class="menus">
+        <li><a href="javascript:menuHandler('timeline-set-readonly');">Set Read Only</a></li>
+      </ul>
+    </li>
+    <!--
+  ------------------------------------------------
+    Navigate Menu
+  ------------------------------------------------
+  -->
+    <li><a href="#">Navigate</a>
+      <ul class="menus">
+        <li><a id="goto-zero" href="javascript:menuHandler('navigate-goto-zero');">Go to Today</a></li>
+        <li><a id="goto-time" href="javascript:menuHandler('navigate-goto-time');">Go to Date</a></li>
+        <li><a class="divider" href="javascript:menuHandler('navigate-backward');">Backward</a></li>
+        <li><a href="javascript:menuHandler('navigate-forward');">Forward</a></li>
+        <li><a class="divider" href="javascript:menuHandler('navigate-fit-all');">Fit All Events</a></li>
+      </ul>
+    </li>
+    <!--
+  ------------------------------------------------
+    Help Menu
+  ------------------------------------------------
+  -->
+    <li><a href="#">Help</a>
+      <ul class='menus'>
+        <li><a href="javascript:menuHandler('help-content');">Content</a></li>
+        <li><a href="javascript:menuHandler('help-gregorian-sample-timeline');">Sample Timeline</a></li>
+        <li><a class="divider" href="javascript:menuHandler('help-about');">About</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <!--
+  ================================================
+    File path
+  ================================================
+  -->
+  <div class="path" id="timelinepath"></div>
+
+  <!--
+  ================================================
+    New Timeline Dialog
+  ================================================
+  -->
+  <div id="new-timeline" style="display:none;" class="dialog">
+    <form action="#" style="margin:auto;width:50%;">
+      <fieldset>
+        <legend>Create Timeline</legend>
+        <div>
+          <label id="new-timeline-error-text" style="display:none;color:red;">Text:</label>
+          <div>
+            <label for="filename">Filename:</label>
+            <input type="text" name="filename" id="new-timeline-filename" class="text">
+          </div>
+          <div>
+            <button type="submit">OK</button>
+            <button onclick=''>Cancel</button>
+          </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <!--
+  ================================================
+   Time Input Dialog
+  ================================================
+  -->
+  <div id="date-input" style="display:none;width:18%;" class="dialog">
+    <form action="#" style="margin:auto;">
+      <fieldset>
+        <legend>Go To</legend>
+        <div>
+          <label id="date-input-error-text" style="display:none;color:red;">Text:</label>
+          <div id="time">
+            <label id="time-label" for="new-date" style="width: auto;">Date:</label>
+            <input id="time-input" type="date" name="new-date" id="new-date" class="text">
+          </div>
+          <div>
+            <button style="float: left;" type="submit">OK</button>
+            <button style="float: left;" onclick=''>Cancel</button>
+          </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <!--
+  ================================================
+   Filename Input Dialog
+  ================================================
+  -->
+  <div id="filename-input" style="display:none;width:18%;" class="dialog">
+    <form action="#" style="margin:auto;">
+      <fieldset>
+        <legend>Filename</legend>
+        <div>
+          <label id="filename-input-error-text" style="display:none;color:red;">Text:</label>
+          <div id="time">
+            <label id="filename-label" for="new-filename" style="width: auto;">Filename:</label>
+            <input id="filename-input" type="text" name="new-filename" id="new-filename" class="text">
+          </div>
+          <div>
+            <button style="float: right;" type="submit">OK</button>
+            <button style="float: right;" onclick=''>Cancel</button>
+          </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <!--
+  ================================================
+    Edit Event Dialog
+  ================================================
+  -->
+  <div id="edit-events" style="display:none;" class="dialog">
+    <form action="#" style="margin:auto;width:50%;">
+      <fieldset>
+        <legend>Edit Events</legend>
+        <div>
+          <label id="edit-events-error-text" style="display:none;color:red;">Text:</label>
+        </div>
+        <div>
+          <label for="event-ids">Event:</label>
+          <select onchange="fillEventData()" id="event-ids"></select>
+        </div>
+        <div>
+          <label for="text">Text:</label>
+          <input type="text" name="text" id="text" class="text">
+        </div>
+        <div>
+          <label for="start">Start:</label>
+          <input type="text" name="start" id="start" value="" class="text">
+        </div>
+        <div>
+          <label for="end">End:</label>
+          <input type="text" name="end" id="end" value="" class="text">
+        </div>
+        <div>
+          <label for="description">Description:</label>
+          <textarea rows="6" cols="60" name="description" id="description" value="" class="text">
+          </textarea>
+        </div>
+        <div>
+          <label for="category-names">Category:</label>
+          <select id="event-category-names"></select>
+        </div>
+        <div>
+          <label for="container-names">Container:</label>
+          <input type="text" list="containers-list" id="container-name"/>
+          <datalist id="containers-list"></datalist>
+        </div>
+        <div>
+          <label for="default-color">Default Color:</label>
+          <input type="color" name="default-color" id="default-color" class="text">
+        </div>
+        <div>
+          <label class="cbl" for="fuzzy-start">Fuzzy Start:</label>
+          <input class="cb" type="checkbox" name="fuzzy-start" id="fuzzy-start">
+          <label class="cbl" for="fuzzy-end">Fuzzy End:</label>
+          <input class="cb" type="checkbox" name="fuzzy-end" id="fuzzy-end">
+          <label class="cbl" for="locked">Locked:</label>
+          <input class="cb" type="checkbox" name="locked" id="locked">
+          <label class="cbl" for="ends-today">Ends Today:</label>
+          <input class="cb" type="checkbox" name="ends-today" id="ends-today">
+        </div>
+        <div>
+          <button type="submit">OK</button>
+          <button type="submit">New</button>
+          <button type="submit">Delete</button>
+          <button onclick=''>Cancel</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <!--
+  ================================================
+    Edit Categories Dialog
+  ================================================
+  -->
+  <div id="edit-categories" style="display:none;" class="dialog">
+    <form action="#" style="margin:auto;width:50%;">
+      <fieldset>
+        <legend>Edit Categories</legend>
+        <div>
+          <label id="edit-categories-error-text" style="display:none;color:red;">Text:</label>
+          <div>
+            <label class="widelabel" for="category-names">Select Category:</label>
+            <select onchange="fillCategoryData()" id="category-names"></select>
+          </div>
+          <div>
+            <label class="widelabel" for="category-name">Name:</label>
+            <input type="text" name="category-name" id="category-name" class="text">
+          </div>
+          <div>
+            <label class="widelabel" for="color">Color:</label>
+            <input type="color" name="color" id="category-color" class="text">
+          </div>
+          <div>
+            <label class="cbl widelabel" for="hidden">Hidden:</label>
+            <input class="cb" type="checkbox" name="hidden" id="category-hidden">
+          </div>
+            <div>
+            <button type="submit">OK</button>
+            <button type="submit">New</button>
+            <button type="submit">Delete</button>
+            <button onclick=''>Cancel</button>
+          </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <!--
+  ================================================
+   Edit Eras Dialog
+  ================================================
+  -->
+  <div id="edit-eras" style="display:none;" class="dialog">
+    <form action="#" style="margin:auto;width:50%;">
+      <fieldset>
+        <legend>Edit Eras</legend>
+        <div>
+          <label id="edit-eras-error-text" style="display:none;color:red;">Text:</label>
+        </div>
+        <div>
+          <label for="era-names">Era:</label>
+          <select onchange="fillEraData()" id="era-names"></select>
+        </div>
+        <div>
+          <label for="text">Name:</label>
+          <input type="text" name="text" id="era-name" class="text">
+        </div>
+        <div>
+          <label for="start">Start:</label>
+          <input type="text" name="start" id="era-start" value="" class="text">
+        </div>
+        <div>
+          <label for="end">End:</label>
+          <input type="text" name="end" id="era-end" value="" class="text">
+        </div>
+        <div>
+          <label for="era-color">Color:</label>
+          <input type="color" name="era-color" id="era-color" class="text">
+        </div>
+        <div>
+          <label class="cbl" for="ends-today">Ends Today:</label>
+          <input class="cb" type="checkbox" name="ends-today" id="era-ends-today">
+        </div>
+        <div>
+          <button type="submit">OK</button>
+          <button type="submit">New</button>
+          <button type="submit">Delete</button>
+          <button onclick=''>Cancel</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+    <!--
+  ================================================
+    Edit Milestones Dialog
+  ================================================
+  -->
+  <div id="edit-milestones" style="display:none;" class="dialog">
+    <form action="#" style="margin:auto;width:50%;">
+      <fieldset>
+        <legend>Edit Milestones</legend>
+        <div>
+          <label id="edit-milestones-error-text" style="display:none;color:red;">Text:</label>
+        </div>
+        <div>
+          <label for="milestone-ids">Milestone:</label>
+          <select onchange="fillMilestoneData()" id="milestone-ids"></select>
+        </div>
+        <div>
+          <label for="milestone-text">Label:</label>
+          <input type="text" maxlength="1" name="milestone-text" id="milestone-text" class="text">
+        </div>
+        <div>
+          <label for="milestone-start">When:</label>
+          <input type="text" name="milestone-start" id="milestone-start" value="" class="text">
+        </div>
+        <div>
+          <label for="milestone-description">Description:</label>
+          <textarea rows="6" cols="60" name="milestone-description" id="milestone-description" value="" class="text">
+          </textarea>
+        </div>
+        <div>
+          <label for="category-names">Category:</label>
+          <select id="milestones-category-names"></select>
+        </div>
+        <div>
+          <label for="milestone-default-color">Default Color:</label>
+          <input type="color" name="milestone-default-color" id="milestone-default-color" class="text">
+        </div>
+        <div>
+          <button type="submit">OK</button>
+          <button type="submit">New</button>
+          <button type="submit">Delete</button>
+          <button onclick=''>Cancel</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+    <!--
+  ================================================
+   Settings Dialog
+  ================================================
+  -->
+  <div id="edit-settings" style="display:none;" class="dialog">
+    <form action="#" style="margin:auto;width:50%;">
+      <fieldset>
+        <legend>Settings</legend>
+        <div>
+          <label id="edit-settings-error-text" style="display:none;color:red;">Text:</label>
+        </div>
+        <div>
+          <label class="cbl widelabel" for="bubble-on-hoover">Bubble on Hoover:</label>
+          <input class="cb" type="checkbox" name="bubble-on-hoover" id="bubble-on-hoover">
+        </div>
+        <div>
+          <label class="cbl widelabel" for="gradient-drawing">Gradient Drawing:</label>
+          <input class="cb" type="checkbox" name="gradient-drawing" id="gradient-drawing">
+        </div>
+        <div>
+          <label class="cbl widelabel" for="web-server-url">Web Server URL:</label>
+          <input type="text" name="web-server-url" id="web-server-url">
+        </div>
+        <div>
+          <label class="cbl widelabel" for="save-timeout">Save Timeout (sec):</label>
+          <input type="number" min="1" name="save-timeout" id="save-timeout">
+        </div>
+        <div>
+          <button type="submit">OK</button>
+          <button onclick=''>Cancel</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+        <!--
+  ================================================
+   Help Content
+  ================================================
+  -->
+  <div id="help-content" style="display:none;" class="dialog">
+    <form action="#" style="margin:auto;width:50%;">
+      <fieldset>
+        <legend>Help Content</legend>
+        <div>
+          <label id="help-content-error-text" style="display:none;color:red;">Text:</label>
+        </div>
+        <div>
+          <ul>
+            <li>Concepts</li>
+            <ul>
+
+              <div class="content">
+                <li>Timeline</li>
+                <div class="help">
+                  <p>A timeline is used to show Events occuring in a timely order.</p>
+                  <p>Different scales can be used for the timeline.</p>
+                  <p>In TimelineJs two scales are defined.</p>
+                  <ul>
+                    <li>A Gregorian calender time scale</li>
+                    <li>A Numeric integer scale</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="content">
+                <li>Event</li>
+                <div class="help">
+                  <p>An event is the basic data type for representing information on the timeline.</p>
+                  <p>You must specify where on the timeline it should be placed (when that event happened).
+                  This can be either a specific point in time or a period.</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <li>Milestone</li>
+                <div class="help">
+                  <p>
+                    A milestone is a special case of a point event. It is rendered on the timescale of a timeline and it can have a description shown when hovered over. It can also have a one character label that is displayed in the milestone box.
+                  </p>
+                  <p>A milestone ...</p>
+                  <ul>
+                    <li>is created by selecting the menu alternative Timeline -> Create milestone.</li>
+                    <li>is edited by doubleclicking on it.</li>
+                    <li>is deleted by clicking on it and thereafter click the delete button.</li>
+                    <li>can be dragged to a new position.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="content">
+                <li>Container</li>
+                <div class="help">
+                  <p>Containers are a way to group events together.</p>
+                  <p>
+                    In a container events can not overlap, so if you add a new event to a container
+                    all other events are moved to give room for the new event. The same thing happens
+                    if you resize an event within the container.
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <li>Category</li>
+                <div class="help">
+                  <p>Categories are used to group events.</p>
+                  <p>An event can only belong to one category.</p>
+                  <p>All events that belong to the same category are displayed with the same background color.</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <li>Era</li>
+                <div class="help">
+                  <p>
+                    An Era is a clearly defined period of time of arbitrary but well-defined length.
+                  </p>
+                  <p>
+                    An Era is displayed as a background with the color defined for the Era. The Era name is written at the bottom of the timeline.
+                  </p>
+                </div>
+              </div>
+
+            </ul>
+
+            <li>Activities</li>
+            <ul>
+
+              <div class="content">
+                <li>Create a new Timeline</li>
+                <div class="help">
+                  <p>
+                    Select File -> New in the main menu and select either a Gregorian or a
+                    Numeric timeline.
+                  </p>
+                  <p>
+                    Give it a filename (without the extension .timeline) in the
+                    dialog that appears.
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <li>Add/Edit/Delete Events</li>
+                <div class="help">
+                  <p>
+                    Select Edit -> Edit Events... in the main menu to open the
+                    Event editor.<br>
+                    You can also doubleclick on an event to open the Event editor.<br>
+                    An event can also be deleted by clicking on it (to mark it as selected)
+                    and hit the Delete button.
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <li>Move an Event</li>
+                <div class="help">
+                  <p>
+                    Click on the Event with the left mouse button to select it.
+                    When selected, three handles appear on the Event.
+                  </p>
+                  <p>
+                    Drag the center handle to move the Event.
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <li>Resize an Event</li>
+                <div class="help">
+                  <p>
+                    Click on the Event with the left mouse button to select it.
+                    When selected, three handles appear on the Event.
+                  </p>
+                  <p>
+                    Drag the left or right handle to resize the Event.
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <li>Add/Edit/Delete Categories</li>
+                <div class="help">
+                  <p>
+                    Select Edit -> Edit Categories... in the main menu to open the
+                    Category editor.
+                  </p>
+                  <p>
+                    When a category is edited or deleted, all Events associated with this
+                    category are updated to reflect the change.
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <li>Add/Edit/Delete Eras</li>
+                <div class="help">
+                  <p>
+                    Select Edit -> Edit Eras... in the main menu to open the
+                    Era editor.
+                  </p>
+                </div>
+              </div>
+
+
+            </ul>
+          </ul>
+        </div>
+        <div>
+          <button onclick=''>Close</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+      <!--
+  ================================================
+   About Dialog
+  ================================================
+  -->
+  <div id="help-about" style="display:none;" class="dialog">
+    <form action="#" style="margin:auto;width:50%;">
+      <fieldset>
+        <legend>About</legend>
+        <div>
+          <label id="help-about-error-text" style="display:none;color:red;">Text:</label>
+        </div>
+        <div>
+          <h1>TimelineJs 1.0.0</h1>
+          <p>Copyright &copy; 2021 The TimelineJs authors.</p>
+          <p>TimelineJs is a free application for displaying and navigating events on a timeline.</p>
+          <p>This is an attempt to port the
+            <a href="https://sourceforge.net/projects/thetimelineproj/" target="_blank">Timeline project</a> from Python to Javascript.
+          This means that the timeline files saved with Timeline can be read and updated with TimelineJs.
+          TimelineJs contains a subset of the functionallity found in Timeline.</p>
+          <p>The TimelineJs project can be found at
+            <a href="https://bitbucket.org/rogerlindberg/timelinejs" target="_blank">Bitbucket</a>
+          </p>
+          <p>Authors</p>
+          <ul>
+            <li>Roger Lindberg</li>
+            <li>Rickard Lindberg</li>
+          </ul>
+        </div>
+        <div>
+          <button type="submit">Close</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+    <!--
+  ================================================
+    Read Only message
+  ================================================
+  -->
+  <p id="readonly">Timeline is in Read Only. No changes are saved!</p>
+
+  <!--
+  ================================================
+    Welcome message
+  ================================================
+  -->
+  <p id="norepo"><br>Welcome to Timeline! <br><br>
+    <image src="images/favicon.ico"/><br><br>
+    Try the tutorial timeline by selecting the Help -> Sample Timeline menu.<br>
+  </p>
+
+  <!--
+  ================================================
+    The canvas
+  ================================================
+  -->
+  <canvas id="mainCanvas">
+    Your browser does not support the HTML canvas tag.
+  </canvas>
+
+  <!--
+  ===================================================================
+    Scripts
+    We have experinced problem when debugging and loading script from
+    server. So when we are debugging we load scripts from local file
+    system by setting the constant RUN_LOCALLY = true
+  ===================================================================
+  -->
+
+  <script src="js/utilities/colors.js"></script>
+  <script src="js/utilities/point.js"></script>
+  <script src="js/utilities/dom.js"></script>
+  <script src="js/utilities/strings.js"></script>
+  <script src="js/utilities/arrays.js"></script>
+  <script src="js/utilities/sampletimelines/gregoriansampletimeline.js"></script>
+
+  <script src="js/timetypes/time.js"></script>
+
+  <script src="js/timetypes/numeric/numtime.js"></script>
+  <script src="js/timetypes/numeric/numtimedelta.js"></script>
+  <script src="js/timetypes/numeric/numtimetype.js"></script>
+  <script src="js/timetypes/numeric/strips.js"></script>
+  <script src="js/timetypes/gregorian/gregoriantime.js"></script>
+  <script src="js/timetypes/gregorian/gregoriantimedelta.js"></script>
+  <script src="js/timetypes/gregorian/gregoriantimetype.js"></script>
+  <script src="js/timetypes/gregorian/strips.js"></script>
+
+  <script src="js/timelineobjects/repository.js"></script>
+  <script src="js/timelineobjects/period.js"></script>
+  <script src="js/timelineobjects/era.js"></script>
+  <script src="js/timelineobjects/event.js"></script>
+  <script src="js/timelineobjects/category.js"></script>
+
+  <script src="js/config/settings.js"></script>
+  <script src="js/config/version.js"></script>
+
+  <script src="js/importers/importer.js"></script>
+  <script src="js/importers/repoimporter.js"></script>
+  <script src="js/importers/settingsimporter.js"></script>
+  <script src="js/exporters/exporter.js"></script>
+  <script src="js/exporters/repoexporter.js"></script>
+  <script src="js/exporters/settingsexporter.js"></script>
+  <script src="js/exporters/svgexporter.js"></script>
+
+  <script src="js/drawing/scene.js"></script>
+  <script src="js/drawing/drawing.js"></script>
+  <script src="js/drawing/svg.js"></script>
+
+  <script src="js/eventhandlers/window.js"></script>
+  <script src="js/eventhandlers/menu.js"></script>
+  <script src="js/eventhandlers/dialogs.js"></script>
+  <script src="js/eventhandlers/dialogs/newtimeline.js"></script>
+  <script src="js/eventhandlers/dialogs/opentimeline.js"></script>
+  <script src="js/eventhandlers/dialogs/editevents.js"></script>
+  <script src="js/eventhandlers/dialogs/editcategories.js"></script>
+  <script src="js/eventhandlers/dialogs/editeras.js"></script>
+  <script src="js/eventhandlers/dialogs/editmilestones.js"></script>
+  <script src="js/eventhandlers/dialogs/editsettings.js"></script>
+  <script src="js/eventhandlers/dialogs/gototime.js"></script>
+  <script src="js/eventhandlers/dialogs/getfilename.js"></script>
+  <script src="js/eventhandlers/dialogs/help.js"></script>
+  <script src="js/eventhandlers/keyboard.js"></script>
+  <script src="js/eventhandlers/mouse.js"></script>
+
+</body>
+
+</html>

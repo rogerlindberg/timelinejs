@@ -1,0 +1,134 @@
+/*
+  Copyright (C) 2021  Roger Lindberg, Rickard Lindberg
+
+  This file is part of TimelineJs.
+
+  TimelineJs is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  TimelineJs is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with TimelineJs.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+
+/* Navbar container */
+.navbar {
+    height: 30px;   /* Height of the main menu bar */
+    margin: 0 0;
+    padding: 0 0;
+ }
+
+/* All menu items are defined in anchor tags */
+.navbar a {
+    color: #000;
+    font: 10px Arial;
+    display: block;
+    line-height: 20px;  /* The height of the menu items */
+    text-decoration: none;
+    padding: 4px 16px 4px 16px; /* top right bottom left */
+}
+
+/* Light blue background on main menu when hoovering */
+.navbar li a:hover {
+    background: #DBEFFF
+}
+
+/* Darker blue background on submenu when hoovering */
+.navbar ul.menus a:hover {
+    background: #A5D6FF;
+}
+
+/* anchor tags with class=divider has a top border */
+.navbar a.divider {
+    clear: both;
+}
+
+.navbar a.divider:after {
+    content: '';
+    width: 134px;
+    height: 1px;
+    background: gray;
+    position: absolute;
+    bottom: 28px;
+    left: 12px;
+  }
+
+/* The arrow after the menu text indicating a drop-down menu. */
+.navbar a.prett::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 5px 8px; /* top and bottom */
+    border-style: solid;
+    border-color:  transparent transparent transparent #777; /* top right bottom left */
+    position: absolute;
+    top: 9px;
+    right: 4px
+}
+
+/* Common settings for all lists */
+.navbar ul {
+    margin: 0 0;
+    padding: 0 0;
+    list-style: none
+}
+
+/* The container for drop-down menues */
+.navbar ul.menus {
+    height: auto;
+    width: 150px;
+    background: #fff;
+    position: absolute;
+    z-index: 99;
+    display: none;
+    border: 0;
+}
+
+/* Common settings for all list items (main bar, drop-down, submenu) */
+.navbar li {
+    margin: 0 0;
+    padding: 0 0;
+    list-style: none;
+    float: left;
+    display: inline;
+    position: relative;
+}
+
+.navbar ul.menus li {
+    display: block;
+    width: 100%;
+    text-transform: none;
+}
+
+/* Displays the drop-down mmenues menu main menue is hoovered */
+.navbar li:hover ul.menus {
+    display: block
+}
+
+/* Drop-down menus and submenues are shadowed */
+.navbar ul.menus,
+.navbar ul.submenu {
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Submenues are displayed to the right of the drop down menue */
+.navbar .submenu {
+    display: none;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    width: 150px;
+}
+
+/* Displays the submenu when drop-down menu is hoovered */
+.navbar ul.menus .has-submenu:hover .submenu {
+    display: block;
+}

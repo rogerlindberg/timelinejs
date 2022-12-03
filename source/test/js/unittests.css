@@ -1,0 +1,21 @@
+h1 {
+    font: 16px Arial;
+}
+
+h2 {
+    font: 14px Arial;
+}
+
+p {
+    font: 14px Courier;
+    padding: 0;
+    margin: 0;
+}
+
+#pass {
+    color: green;
+}
+
+#fail {
+    color: red;
+}
