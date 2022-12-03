@@ -26,7 +26,7 @@ Download project
 Go to a directory where you want to store this project and download it from
 Bitbucket with the command
 
-    git clone https://rogerlindberg@bitbucket.org/rogerlindberg/timelinejs.git
+    git clone https://github.com/rogerlindberg/timelinejs.git
 
 This command creates the following directory structure...
 
